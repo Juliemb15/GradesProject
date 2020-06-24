@@ -1,0 +1,26 @@
+import numpy as np
+import matplotlib.pyplot as plt
+import pandas as pd
+
+"""
+Lavet af Julie s184515
+"""
+
+def roundGrade(grades):
+    for i in range(len(grades)):
+        if grades[i] >= -3 and grades[i] < -1.5:
+            grades[i] = -3
+        elif grades[i] >= -1.5 and grades[i] < 1:
+            grades[i] = 00
+        elif grades[i] >= 1 and grades[i] < 3:
+            grades[i] = 2
+        elif grades[i] >= 3 and grades[i] < 5.5:
+            grades[i] = 4
+        elif grades[i] >= 5.5 and grades[i] < 8.5:
+            grades[i] = 7
+        elif grades[i] >= 8.5 and grades[i] < 11:
+            grades[i] = 10
+        elif grades[i] >= 11 and grades[i] <= 12:
+            grades[i] = 12
+    gradesRounded = grades
+    return gradesRounded
